@@ -38,6 +38,17 @@ class Main {
                 for (Conta conta : list) {
                     System.out.println("Conta: " + conta);
                 }
+            }
+
+            if(opc == 3) {
+                System.out.print("Digite o nome: ");
+                var name = scanner.next();
+
+                var result = service.findByName(name);
+                System.out.println("Conta encontrada: " + result);
+            }
+
+            if(opc == 4) {
 
             }
 

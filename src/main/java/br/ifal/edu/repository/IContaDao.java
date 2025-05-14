@@ -9,4 +9,6 @@ public interface IContaDao {
     public void save(Conta conta);
 
     public List<Conta> findAll();
+
+    public Conta findByName(String nome);
 }

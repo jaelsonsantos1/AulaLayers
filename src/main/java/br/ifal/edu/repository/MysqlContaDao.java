@@ -17,4 +17,13 @@ public class MysqlContaDao implements IContaDao {
     public List<Conta> findAll() {
         return db;
     }
+
+    public Conta findByName(String name) {
+        for (Conta conta : db) {
+            if (conta.getNome().equals(name)) {
+                return conta;
+            }
+        }
+        return null;
+    }
 }

@@ -21,4 +21,5 @@ public class ContaService2 implements IContaService {
         return dao.findAll();
     }
 
+    public Conta findByName(String name) { return dao.findByName(name); }
 }

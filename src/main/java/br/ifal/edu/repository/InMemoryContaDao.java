@@ -18,5 +18,8 @@ public class InMemoryContaDao implements IContaDao {
         return db;
     }
 
-
+    public Conta findByName(String name) {
+        for (Conta conta : db) return conta.getNome().equals(name) ? conta : null;
+        return null;
+    }
 }
